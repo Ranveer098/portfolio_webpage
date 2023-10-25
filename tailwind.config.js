@@ -1,10 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 
-const { fontFamily} = require('tailwindcss/defaultTheme')
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
-    
- 
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
@@ -18,12 +17,11 @@ module.exports = {
         light: "#f5f5f5",
         primary: "#B63E96", // 240,86,199
         primaryDark: "#58E6D9", // 80,230,217
-    },
-    animation: {
-      spin: "spin 8s linear infinite",
-    },
-    },
+      },
+      animation: {
+        spin: "spin 8s linear infinite",
+      },
+    }, // <-- Missing closing curly brace here in your provided code
   },
   plugins: [],
-}
-
+};
