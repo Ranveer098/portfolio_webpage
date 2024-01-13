@@ -8,6 +8,8 @@ import { useInView } from "react-intersection-observer";
 import { useMotionValue, useSpring } from "framer-motion";
 import { useRef } from "react";
 import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 
 
 const AnimatedNumber = ({ value }) => {
@@ -111,6 +113,8 @@ const about = () => {
           </div>
 
           <Skills/>
+          <Experience/>
+          <Education/>
 
 
         </Layout>
