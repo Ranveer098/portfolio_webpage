@@ -9,6 +9,7 @@ import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 
+
 export default function Home() {
   return (
     <>
@@ -60,6 +61,8 @@ export default function Home() {
           <Image src={lightBulb} alt="light" className="w-full h-auto" />
         </div>
         <about />
+        
+
       </main>
     </>
   );
