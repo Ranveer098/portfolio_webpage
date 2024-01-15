@@ -8,6 +8,8 @@ import { GithubIcon } from "@/components/Icons";
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
 import project2 from "../../public/images/projects/devdreaming.jpg";
 
+
+
 const FeaturedProjects = ({ type, title, summary, img, link, github }) => {
   return (
     <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative  rounded-br-2xl dark:bg-dark dark:border-light">
@@ -19,7 +21,15 @@ const FeaturedProjects = ({ type, title, summary, img, link, github }) => {
         target="_blank"
         className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <Image src={img} alt={title} className="w-full h-auto" 
+        whileHover={{ scale: 1.05 }} 
+        transintion={{ duration: 0.2 }} 
+        priority sizes="(max-width: 768px) 100vw,(max-width: 1200px) 50vw, 50vw"
+                
+        
+        
+        
+        />
       </Link>
 
       <div className="w-1/2 flex flex-col items-start  justify-between pl-6">
@@ -41,7 +51,7 @@ const FeaturedProjects = ({ type, title, summary, img, link, github }) => {
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold"
+            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark"
           >
             Visit project
           </Link>
@@ -53,10 +63,10 @@ const FeaturedProjects = ({ type, title, summary, img, link, github }) => {
 
 const Project = ({ type, title, img, link, github }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark">
+    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark  dark:border-light">
 
 
-      <div className=" absolute top-0  -right-3 -z-10 w-[101%] h-[103%]  rounded-[2rem] bg-dark rounded-br-3xl  " />
+      <div className=" absolute top-0  -right-3 -z-10 w-[101%] h-[103%]  rounded-[2rem] bg-dark rounded-br-3xl   dark:bg-light " />
 
       <Link
         href={link}
@@ -67,7 +77,7 @@ const Project = ({ type, title, img, link, github }) => {
       </Link>
 
       <div className="w-full flex flex-col items-start  justify-between mt-4">
-        <span className="text-primary font-medium text-xl">{type}</span>
+        <span className="text-primary font-medium text-xl dark:text-primaryDark">{type}</span>
         <Link
           href={link}
           target="_blank"
