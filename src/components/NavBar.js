@@ -92,7 +92,7 @@ const NavBar = () => {
       <div className="w-full flex justify-between items-center lg:hidden">
         <nav>
           <CustomLink href="/" title="Home" className="mr-4" />
-          <CustomLink href="/about" title="About" className="mx-4" />
+          <CustomLink href="/About" title="About" className="mx-4" />
           <CustomLink href="/projects" title="Projects" className="mx-4" />
           {/* <CustomLink href="/ articles" title="Articles" className="ml-4" /> */}
         </nav>
@@ -159,7 +159,7 @@ const NavBar = () => {
       className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2  -translate-y-1/2 -translate-x-1/2 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32">
       <nav className=" flex items-center flex-col justify-center">
         <CustomMobileLink href="/" title="Home" className="" toggle={handleClick} />
-        <CustomMobileLink href="/about" title="About" className="" toggle={handleClick}/>
+        <CustomMobileLink href="/About" title="About" className="" toggle={handleClick}/>
         <CustomMobileLink href="/projects" title="Projects" className="" toggle={handleClick}/>
         {/* <CustomLink href="/ articles" title="Articles" className="ml-4" /> */}
       </nav>
