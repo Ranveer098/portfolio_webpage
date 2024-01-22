@@ -44,23 +44,24 @@ const Education = () => {
         />
         <ul className="w-[75%] flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            type="Software Engineer"
-            time="2023"
-            place="Mountain View, CA"
-            info="2022-Present "
+            type="Graduation"
+            time="2025"
+            place="SRM University,Amaravati"  
+            info="2021-Present "
           />
           <Details
-            type="Software Engineer"
-            time="2023"
-            place="Mountain View, CA"
-            info="2022-Present "
+            type="High School"
+            time="2021"
+            place="DAV RB Kedia School,Nepal"
+            info="2019-2021"
           />
           <Details
-            type="Software Engineer"
-            time="2023"
-            place="Mountain View, CA"
-            info="2022-Present "
+            type="Secondary School"
+            time="2019"
+            place=" St.Xavier's School,Nepal"
+            info="2012-2019"
           />
+      
         </ul>
       </div>
     </div>
