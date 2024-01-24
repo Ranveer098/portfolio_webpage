@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout from "@/components/Layout";
 
-import About from "./About";
+
 
 import Image from "next/image";
 import profilePic from "../../public/images/profile/developer-pic-1.png";
@@ -74,7 +74,7 @@ export default function Home() {
         <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
           <Image src={lightBulb} alt="light" className="w-full h-auto" />
         </div>
-        <About />
+        
       </main>
     </>
   );
