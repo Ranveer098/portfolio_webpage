@@ -12,7 +12,6 @@ import Transitions from "@/components/Transitions";
 const FeaturedProjects = ({ type, title, summary, img, link, github }) => {
   return (
     <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative  rounded-br-2xl dark:bg-dark dark:border-light  lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
-
       <div className=" absolute top-0  -right-3 -z-10 w-[101%] h-[103%]  rounded-[2.5rem] bg-dark rounded-br-3xl  dark:bg-light  xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" />
 
       <Link
@@ -24,7 +23,7 @@ const FeaturedProjects = ({ type, title, summary, img, link, github }) => {
           src={img}
           alt={title}
           className="w-full h-auto"
-          whileHover={{ scale: 1.05 }}
+          whilehover={{ scale: 1.05 }}
           transintion={{ duration: 0.2 }}
           priority
           sizes="(max-width: 768px) 100vw,(max-width: 1200px) 50vw, 50vw"
@@ -40,10 +39,14 @@ const FeaturedProjects = ({ type, title, summary, img, link, github }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold xs:text-base">{title}</h2>
+          <h2 className="my-2 w-full text-left text-4xl font-bold xs:text-base">
+            {title}
+          </h2>
         </Link>
 
-        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm ">{summary}</p>
+        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm ">
+          {summary}
+        </p>
         <div className="mt-2 flex items-center">
           <Link href={github} target="_blank" className="w-10">
             <GithubIcon />
@@ -98,7 +101,7 @@ const Project = ({ type, title, img, link, github }) => {
             Visit
           </Link>
 
-          <Link href={github} target="_blank" className="w-8 md:w-6" >
+          <Link href={github} target="_blank" className="w-8 md:w-6">
             <GithubIcon />
           </Link>
         </div>
